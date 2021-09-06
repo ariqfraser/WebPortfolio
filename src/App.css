@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* 
+  Colors: 
+    Light Grey: 888788
+    dark grey: 292929
+    off white: f8f6f8
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+:root {
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection {
+  background-color: #FE6B8B;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2{
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-off-white {
+  background-color: #f8f6f8;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+#subHeading {
+  opacity: 0;
+  /* margin-top: -50px; */
+  transition: all 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+#cursor {
+  animation: blink 0.6s alternate infinite;
+  font-weight: 500;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 0;
+  } 
+  50%, 100% {
+    opacity: 1;
   }
 }
