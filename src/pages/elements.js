@@ -110,3 +110,46 @@ export const SectionAccent = style.div`
     z-index: -2;
 
 `
+
+export const FeatProjects = style.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+`
+
+export const Project = style.div`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+`
+
+export const PHead = style.div`
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+
+    h4 {
+        color: blue;
+        display:relative;
+        padding: 0;
+        margin: 0 auto 0 0;
+
+    }
+
+    svg:nth-child(3) {
+        padding: 0 24px 0 8px;
+    }
+
+
+
+
+`
+
+export const PContent = style.div`
+    width: 25%;
+    padding: 0 0 4px;
+`
+
+export const PImg = style.img`
+    width: 25%;
+`

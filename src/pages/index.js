@@ -1,6 +1,6 @@
 import React from 'react'
 import Socials from '../components/socials'
-import {Section, ScrollIndicator, SkillsWrapper, SkillCard, SectionHeading, SectionAccent} from './elements'
+import {Section, ScrollIndicator, SkillsWrapper, SkillCard, SectionHeading, SectionAccent,FeatProjects, Project, PHead, PContent, PImg } from './elements'
 import '../App.css'
 import cssImg from '../img/css.png'
 import htmlImg from '../img/html5.png'
@@ -11,6 +11,7 @@ import reactImg from '../img/react.png'
 import aiImg from '../img/ai.png'
 import psImg from '../img/ps.png'
 import xdImg from '../img/xd.png'
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const index = () => {
@@ -130,9 +131,38 @@ const index = () => {
                 </SkillsWrapper>
             </Section> */}
             
-            <Section className="h-100 p-10" id="skills">
-                
-            </Section>
+            
+            <FeatProjects id="projects">
+                <Project>
+                    <PContent>
+                        <PHead>
+                            <h4>Project Title</h4>
+                            <GitHubIcon />
+                            <GitHubIcon />
+                        </PHead>
+                        <p>
+                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. Mollit amet amet eu velit commodo ea labore excepteur ea officia. Elit aliquip deserunt id enim velit aliquip id elit eu do. Quis nostrud Lorem id et elit dolore ea laboris.
+                        </p>
+                    </PContent>
+                    <PImg />
+                </Project>
+                <Project>
+                    <PImg />
+                    <PContent>
+                        
+                        <PHead>
+                            <h4>Project Title</h4>
+                            <GitHubIcon />
+                            <GitHubIcon />
+                        </PHead>
+                        <p>
+                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. Mollit amet amet eu velit commodo ea labore excepteur ea officia. Elit aliquip deserunt id enim velit aliquip id elit eu do. Quis nostrud Lorem id et elit dolore ea laboris.
+                        </p>
+                    </PContent>
+                    
+                </Project>
+            </FeatProjects>
+
 
             
         </>
