@@ -114,9 +114,8 @@ const index = () => {
                 </Canvas> */}
             </Section>
 
-            <Section className="center ">
+            {/* <Section className="center ">
                 <SectionHeading>my skills</SectionHeading>
-                {/* <SectionAccent>my skills.</SectionAccent> */}
                 <SkillsWrapper>
                     <SkillCard className="skill"><img src={cssImg} alt="I am skilled in css"></img></SkillCard>
                     <SkillCard className="skill"><img src={htmlImg} alt="I am skilled in html"></img></SkillCard>
@@ -129,7 +128,7 @@ const index = () => {
                     <SkillCard className="skill"><img src={xdImg} alt="I am skilled in Adobe Xd"></img></SkillCard>
 
                 </SkillsWrapper>
-            </Section>
+            </Section> */}
             
             <Section className="h-100 p-10" id="skills">
                 
