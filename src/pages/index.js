@@ -12,6 +12,7 @@ import aiImg from '../img/ai.png'
 import psImg from '../img/ps.png'
 import xdImg from '../img/xd.png'
 import GitHubIcon from '@material-ui/icons/GitHub';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 
 const index = () => {
@@ -133,30 +134,31 @@ const index = () => {
             
             
             <FeatProjects id="projects">
+                <h3>Featured work</h3>
                 <Project>
                     <PContent>
                         <PHead>
                             <h4>Project Title</h4>
                             <GitHubIcon />
-                            <GitHubIcon />
+                            <OpenInNewIcon />
                         </PHead>
                         <p>
-                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. Mollit amet amet eu velit commodo ea labore excepteur ea officia. Elit aliquip deserunt id enim velit aliquip id elit eu do. Quis nostrud Lorem id et elit dolore ea laboris.
+                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. 
                         </p>
                     </PContent>
-                    <PImg />
+                    <PImg url={'https://i.imgur.com/54deiOy.jpeg'} />
                 </Project>
                 <Project>
-                    <PImg />
+                    <PImg url={'https://i.imgur.com/54deiOy.jpeg'} />
                     <PContent>
                         
                         <PHead>
                             <h4>Project Title</h4>
                             <GitHubIcon />
-                            <GitHubIcon />
+                            <OpenInNewIcon />
                         </PHead>
                         <p>
-                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. Mollit amet amet eu velit commodo ea labore excepteur ea officia. Elit aliquip deserunt id enim velit aliquip id elit eu do. Quis nostrud Lorem id et elit dolore ea laboris.
+                            Dolor velit deserunt mollit culpa sunt id duis consequat aliqua eiusmod amet commodo. Elit sit cupidatat officia non enim cillum officia. 
                         </p>
                     </PContent>
                     
