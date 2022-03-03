@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* font-family: 'Marck Script', cursive;
 font-family: 'Raleway', sans-serif; */
 
@@ -8,7 +8,8 @@ font-family: 'Raleway', sans-serif; */
     --b2: #e9d4cd;
     --b3: #d19a73;
     --mud: #b29f81;
-    --black: rgb(41, 40, 46);
+    --black: #29282e;
+    --black2: #222125;
     scroll-behavior: smooth;
 }
 
@@ -28,13 +29,13 @@ font-family: 'Raleway', sans-serif; */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:  #754E3D;
+    background: #754e3d;
     border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #5C3E34;
+    background: #5c3e34;
 }
 
 body {
@@ -42,13 +43,13 @@ body {
 }
 
 h2 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 24px;
 }
 
 h3 {
-    font-family: "Marck Script", cursive;
+    font-family: 'Marck Script', cursive;
     color: #fff;
     font-size: 5em;
     margin: 0;
@@ -57,7 +58,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Marck Script", cursive;
+    font-family: 'Marck Script', cursive;
     color: #fff;
     font-size: 2.5em;
     margin: 0;
@@ -90,4 +91,3 @@ img {
     flex-direction: column;
     position: fixed;
 }
-

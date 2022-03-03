@@ -2,6 +2,12 @@ import styled from '@emotion/styled';
 import React, { useEffect, useState } from 'react';
 import logo from '../assets/logoSVG.svg';
 import { Link } from 'react-router-dom';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import HomeIcon from '@mui/icons-material/Home';
+import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import MailIcon from '@mui/icons-material/Mail';
+import PersonIcon from '@mui/icons-material/Person';
+import { IconButton } from '@mui/material';
 
 const Nav = () => {
     const Container = styled('nav')({
@@ -10,59 +16,38 @@ const Nav = () => {
         display: 'flex',
         position: 'fixed',
         alignItems: 'center',
-        padding: '1em 2vw',
-        width: '96vw',
-        '&:hover > div ': {
-            marginTop: '0 !important',
-        },
+        justifyContent: 'space-evenly',
+        width: '100vw',
+        backgroundColor: 'var(--black)',
+        bottom: 0,
     });
 
-    const LinkWrapper = styled('div')({
-        display: 'flex',
-        marginLeft: 'auto',
-        transition: '500ms ease-in-out',
-        marginTop: '0',
-        '& > a > div': {
-            display: 'flex',
-            alignItems: 'center',
-            textDecoration: 'none',
-            color: '#fff',
-            outline: 'none',
-            border: '2px solid var(--b3)',
-            borderRadius: '3px',
-            padding: '4px 8px',
-            backgroundColor: 'var(--b3)',
-            transition: '200ms ease-in-out',
-            '&:hover': {
-                color: 'var(--b3)',
-                backgroundColor: 'transparent',
-            },
-        },
-        '& > a': {
-            margin: '0 3em',
-            fontSize: '1em',
-            textDecoration: 'none',
-            color: '#fff',
-            '&:hover': { color: 'var(--b1)' },
-            transition: '300ms ease-in-out',
-        },
+    const MenuBtn = styled(IconButton)({
+        color: 'var(--b1)',
+        fill: 'var(--b1)',
+        width: 50,
+        height: 50,
     });
 
     return (
         <Container>
-            <img
+            {/* <img
                 src={logo}
                 width="60px"
                 alt="Ariq Fraser Logo - Click to go to top"
-            />
-            <LinkWrapper id="NavLinks">
-                <a href="#12">Projects</a>
-                <Link to="">About</Link>
-                <Link to="">Contact</Link>
-                <Link to="">
-                    <div>Resume</div>
-                </Link>
-            </LinkWrapper>
+            /> */}
+            <MenuBtn>
+                <HomeIcon />
+            </MenuBtn>
+            <MenuBtn>
+                <FormatListBulletedIcon />
+            </MenuBtn>
+            <MenuBtn>
+                <MailIcon />
+            </MenuBtn>
+            <MenuBtn>
+                <PersonIcon />
+            </MenuBtn>
         </Container>
     );
 };

@@ -8,7 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/WebPortfolio/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/WebPortfolio" element={<HomePage />} />
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
